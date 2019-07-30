@@ -1,0 +1,17 @@
+version: '3'
+
+networks:
+  devnet:
+    driver: bridge
+
+services:
+  mocksvcwithui:
+    ports:
+      - "8083:8080"
+    container_name: mocksvcwithui
+    image: wiremock-with-ui
+    volumes:
+      - ./testdata:/wiremock
+    networks:
+      - devnet
+    

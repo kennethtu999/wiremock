@@ -65,3 +65,5 @@ scripts/client-cert.*
 
 # MINE #
 Guide.txt
+
+testdata/sampledata
